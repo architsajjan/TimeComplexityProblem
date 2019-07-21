@@ -5,10 +5,12 @@ class Main{
     Scanner sc= new Scanner(System.in);
     int[] s={1,2,3,4,5};
     int rot=0,i=0,item=0,flag=-1,gb=0;   // gb is garbage variable
+    
     System.out.println("Enter no. of times to rotate:");
     rot=sc.nextInt();
     System.out.println("Enter no. to find:");
     item=sc.nextInt();
+    
     i=s.length-1;   //i declared so as to ensure the program runs only n times
     int[] narr=new int[s.length];
 
@@ -24,6 +26,7 @@ class Main{
     }
     // uncomment following line to print the rotated array
     //for(int y=0;y<s.length;++y)System.out.println(" "+narr[y]+"  ");
+    
     System.out.println("\n"+flag);    //flag returns index of element found else -1
   }
 }
